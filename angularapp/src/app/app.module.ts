@@ -16,6 +16,8 @@ import { AddvehicleComponent } from './addvehicle/addvehicle.component';
 import { EditvehicleComponent } from './editvehicle/editvehicle.component';
 import { VehiclelistComponent } from './vehiclelist/vehiclelist.component';
 import { ViewvehicleComponent } from './viewvehicle/viewvehicle.component';
+import { UserlistComponent } from './userlist/userlist.component';
+import { EdituserComponent } from './edituser/edituser.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { ViewvehicleComponent } from './viewvehicle/viewvehicle.component';
     EditvehicleComponent,
     VehiclelistComponent,
     ViewvehicleComponent,
+    UserlistComponent,
+    EdituserComponent,
   
   ],
   imports: [
