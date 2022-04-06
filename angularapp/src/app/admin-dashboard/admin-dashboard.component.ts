@@ -24,4 +24,16 @@ export class AdminDashboardComponent implements OnInit {
   goToUserlist(){
     this.route.navigate(['/getuserlist']);
   }
+
+  logout(){
+    this.route.navigate(['/login']);
+    localStorage.clear();
+    console.log(JSON.parse(localStorage.getItem('Userid')));
+  }
+
+  goToHome(){
+    this.route.navigate(['/admindashboard']);
+  }
+
+  myimage:string="assets/images/1.jpg";
 }

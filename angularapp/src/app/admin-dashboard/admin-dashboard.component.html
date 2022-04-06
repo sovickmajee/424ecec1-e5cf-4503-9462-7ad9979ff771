@@ -8,7 +8,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav mx-auto">
       </ul>
       <div class="d-flex">
-          <button class="btn btn-danger">LogOut</button>
+          <button class="btn btn-danger" (click)="logout()">LogOut</button>
       </div>
     </div>
   </div>
@@ -26,6 +26,9 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <li class="nav-item">
+      <button type = "button" class = "btn btn-primary" (click)="goToHome()">Home</button><br><br>
+    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item">
       <button type = "button" class = "btn btn-primary" (click)="goToAddVehicles()">Add Flight</button><br><br>
     </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <li class="nav-item">        
@@ -41,4 +44,7 @@
 </div>
 
 </nav>
+<div class="img">
+<img [src]="myimage" style="height:721px;width:100%;">
+</div>
 
