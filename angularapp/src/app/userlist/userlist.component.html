@@ -1,4 +1,5 @@
-<div class="container mt-3">
+<app-admin-dashboard></app-admin-dashboard>
+<div class="container">
     <h2>User List</h2>
     <p></p>            
     <table class="table table-success table-striped">
@@ -12,15 +13,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let user of _userlist">
-          <td>{{user.id}}</td>
-          <td>{{user.userName}}</td>
-          <td>{{user.email}}</td>
-          <td>{{user.mobile}}</td>
-          <td>
+        <tr *ngFor="let user of _userlist" >
+          <td *ngIf="user.userName!='Admin'">{{user.id}}</td>
+          <td *ngIf="user.userName!='Admin'">{{user.userName}}</td>
+          <td *ngIf="user.userName!='Admin'">{{user.email}}</td>
+          <td *ngIf="user.userName!='Admin'">{{user.mobile}}</td>
+          <td *ngIf="user.userName!='Admin'">
               <button type="button" class="btn btn-primary"(click)="goToEditUser(user.id)">Edit</button>&nbsp;
               <button type="button" class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>&nbsp; 
           </td>
+         
         </tr>
       </tbody>
     </table>

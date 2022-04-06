@@ -14,7 +14,7 @@ export class SignupComponent implements OnInit {
   msg='';
   constructor(private _service:SignupService, private _router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
   }
 
   signup(){
@@ -29,5 +29,5 @@ export class SignupComponent implements OnInit {
     );
 
   }
-
+  myimage:string="assets/images/1.jpg";
 }
