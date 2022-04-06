@@ -34,9 +34,13 @@ export class SignupService {
     return this.http.get<any>("http://localhost:8080/getuser/"+id);
   }
 
+  fetchUserByEmailFromRemote(email:string):Observable<any>
+  {
+    return this.http.get<any>("http://localhost:8080/finduser/"+localStorage.getItem('email'));
+  }
+
   deleteUserByIdFromRemote(id:number):Observable<any>
   {
     return this.http.delete<any>("http://localhost:8080/deleteuser/"+id);
   }
-
 }

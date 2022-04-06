@@ -15,8 +15,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private _service:SignupService, private _router:Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void{}
 
   loginUser(){
     this._service.loginUserFromRemote(this.user).subscribe(
@@ -32,5 +31,5 @@ export class LoginComponent implements OnInit {
     );
 
   }
-
+  myimage:string="assets/images/1.jpg";
 }
